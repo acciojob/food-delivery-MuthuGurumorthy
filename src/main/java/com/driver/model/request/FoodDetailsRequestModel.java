@@ -1,10 +1,14 @@
 package com.driver.model.request;
 
+import lombok.Builder;
+
+@Builder
 public class FoodDetailsRequestModel {
 
 	private String foodName;
 	private String foodCategory;
 	private float foodPrice;
+
 	public String getFoodName() {
 		return foodName;
 	}
